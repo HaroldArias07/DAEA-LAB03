@@ -38,9 +38,10 @@ namespace Semana03
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(13, 13);
+            this.btnListar.Location = new System.Drawing.Point(17, 16);
+            this.btnListar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(75, 23);
+            this.btnListar.Size = new System.Drawing.Size(100, 28);
             this.btnListar.TabIndex = 0;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
@@ -48,37 +49,43 @@ namespace Semana03
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(132, 14);
+            this.txtNombre.Location = new System.Drawing.Point(176, 17);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(192, 20);
+            this.txtNombre.Size = new System.Drawing.Size(255, 22);
             this.txtNombre.TabIndex = 1;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(330, 12);
+            this.btnBuscar.Location = new System.Drawing.Point(440, 15);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.Size = new System.Drawing.Size(100, 28);
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // dgvListado
             // 
             this.dgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListado.Location = new System.Drawing.Point(13, 42);
+            this.dgvListado.Location = new System.Drawing.Point(17, 52);
+            this.dgvListado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvListado.Name = "dgvListado";
-            this.dgvListado.Size = new System.Drawing.Size(392, 470);
+            this.dgvListado.RowHeadersWidth = 50;
+            this.dgvListado.Size = new System.Drawing.Size(523, 578);
             this.dgvListado.TabIndex = 3;
             // 
             // Persona
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(417, 524);
+            this.ClientSize = new System.Drawing.Size(556, 645);
             this.Controls.Add(this.dgvListado);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnListar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Persona";
             this.Text = "Persona";
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).EndInit();
